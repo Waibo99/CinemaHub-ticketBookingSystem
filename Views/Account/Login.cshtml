@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+}
+
+@using CinemaHubFinalProject.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "登录";
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - Cinema Hub</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        <link href="../../Content/style.css" rel="stylesheet">
+    </head>
+    <div class="center">
+        <h1 class="white">Sign In</h1>
+        <div>
+            <p class="white"> if you want to login as admin,        
+            email: limkaewen376@gmail.com 
+            password: 123456!Lim</p>
+            <section id="loginForm">
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="txt_field grey">
+                        <input id="Email" name="Email" class='grey' type="text" required value>
+                        <span></span>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="txt_field grey">
+                        <input id="Password" name="Password" class='grey' type="password" required value>
+                        <span></span>
+                        <label>Password</label>
+                    </div>
+
+                    <a class='link-hov white' href="ForgotPassword">Forgot Password?</a>
+                    <input type="submit" class="btn" value="Login">
+                    <div class="signup_link">
+                        Not a member? <a class='link-hov white' href="Register">Register</a>
+                    </div>
+                }
+            </section>
+        </div>
+
+    </div>
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+</html>

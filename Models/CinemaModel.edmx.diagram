@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1a9becdae50a4a04b2f8b02ecdcd8e57" Name="Diagram1" ZoomLevel="73">
+        <EntityTypeShape EntityType="Model.C__MigrationHistory" Width="1.5" PointX="2.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetRoles" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUsers" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Comments" Width="1.5" PointX="7.125" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Movies" Width="1.5" PointX="11.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Receipts" Width="1.5" PointX="7.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Shows" Width="1.5" PointX="9.375" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Table" Width="1.5" PointX="16.625" PointY="5.625" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Comments__UserID__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Receipts__UserID__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Comments__MovieN__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Shows__MovieName__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Receipts__ShowID__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
